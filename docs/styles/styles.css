@@ -1,84 +1,82 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: turquoise;
-    color: #333;
+    background-image: url('media/bratmi.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center center; /* Center the image */
+    background-attachment: fixed; /* Fix the background image in place */
+    color: #fff; /* Set default text color to white for better contrast */
+    margin: 0; /* Remove default margin */
+    font-family: 'Roboto', sans-serif; /* Ensure consistent font */
 }
 
-nav {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+/* Custom navbar styles */
+.navbar {
     display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute space between items */
+    padding: 0.5rem 1rem; /* Adjust padding to keep header compact */
+    position: relative;
+    height: 80px; /* Set a specific height to keep the header compact */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better text readability */
+    /* Optional: Add a border or shadow to separate navbar from the rest */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-nav ul li {
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-header {
-    margin-top: 60px;
-    padding: 20px;
-    background-color: #444;
-    color: white;
-}
-
-.gallery {
+/* Ensure logo and text are styled appropriately */
+.navbar-brand {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding: 10px;
+    align-items: center;
 }
 
-.car {
-    margin: 20px;
+.navbar-brand img {
+    height: 90px; /* Increase logo height */
+    margin-right: 15px; /* Increase spacing between logo and text */
+}
+
+.navbar-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem; /* Increase font size for "Car Showroom" text */
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 1rem; /* Increase spacing between nav items */
+}
+
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem; /* Adjust padding for larger links */
+    font-size: 1.25rem; /* Increase font size for nav links */
+    color: #fff; /* Set link color to white */
+}
+
+/* Ensure header and jumbotron are full-width */
+header.jumbotron {
+    margin-bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Optional: Add semi-transparent background */
+    color: #fff; /* Ensure text is readable */
+    padding: 2rem; /* Adjust padding as needed */
+}
+
+/* Card styling */
+.gallery .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
 }
 
-.car:hover {
+.gallery .card:hover {
     transform: scale(1.05);
 }
 
-.car img {
-    width: 650px;
-    height: 350px;
+.card-img-top {
+    height: 200px;
     object-fit: cover;
-    border-radius: 8px;
-}
-
-.car p {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-.content {
-    margin: 80px auto 20px auto;
-    max-width: 800px;
-    text-align: left;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.content img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
 }
