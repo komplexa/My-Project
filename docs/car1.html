@@ -7,6 +7,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .btn-buy {
+            
+            padding: 0.75rem 1.5rem; /* Adjust padding */
+            background-color: #007bff; /* Button background color */
+            color: white; /* Button text color */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s ease; /* Smooth transition */
+            
+        }
+        .btn-buy:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -15,7 +30,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
@@ -32,12 +47,15 @@
         <p>The Tesla Model S is a fully electric luxury sedan that combines performance, safety, and efficiency. It offers a high level of autonomy, premium features, and cutting-edge technology.</p>
         <h2>Specifications</h2>
         <ul>
-            <li><strong>Price:</strong> $79,990</li>
+            <li><strong>Price:</strong> $71,310</li>
             <li><strong>Year:</strong> 2023</li>
             <li><strong>Range:</strong> 396 miles</li>
             <li><strong>Top Speed:</strong> 200 mph</li>
             <li><strong>0-60 mph:</strong> 1.99 seconds</li>
         </ul>
+        <div class="text-center mt-4">
+            <a href="https://www.tesla.com/ms/order/5YJS206_decaf5f651bc2dd450b4df5808f2c6dd?titleStatus=new&redirect=no#overview"><button type='button' class="btn btn-outline-primary">BUY</button></a>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
