@@ -7,6 +7,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .btn-buy {
+            font-size: 1.5rem; /* Increase font size */
+            padding: 0.75rem 1.5rem; /* Adjust padding */
+            background-color: #007bff; /* Button background color */
+            color: white; /* Button text color */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+        .btn-buy:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -15,7 +29,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
@@ -32,12 +46,15 @@
         <p>The Ford Mustang is an American icon that delivers exhilarating performance and a legendary driving experience. It combines modern technology with classic design elements.</p>
         <h2>Specifications</h2>
         <ul>
-            <li><strong>Price:</strong> $55,300</li>
+            <li><strong>Price:</strong>Starts at $36,000</li>
             <li><strong>Year:</strong> 2023</li>
             <li><strong>Engine:</strong> 5.0L V8</li>
             <li><strong>Horsepower:</strong> 450 hp</li>
             <li><strong>0-60 mph:</strong> 4.2 seconds</li>
         </ul>
+        <div class="text-center mt-4 mb-4">
+            <a href="https://www.ford.com/cars/mustang/?gnav=header-suvs-vhp" class="btn btn-buy">BUY</a>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
