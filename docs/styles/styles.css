@@ -1,42 +1,40 @@
 body {
-    background-image: url('media/bratmi.jpg'); /* Path to your background image */
-    background-size: cover; /* Cover the entire viewport */
-    background-position: center center; /* Center the image */
-    background-attachment: fixed; /* Fix the background image in place */
-    color: #fff; /* Set default text color to white for better contrast */
-    margin: 0; /* Remove default margin */
-    font-family: 'Roboto', sans-serif; /* Ensure consistent font */
+    background-image: url('media/bratmi.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #fff;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
 }
 
-/* Custom navbar styles */
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Distribute space between items */
-    padding: 0.5rem 1rem; /* Adjust padding to keep header compact */
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
     position: relative;
-    height: 80px; /* Set a specific height to keep the header compact */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better text readability */
-    /* Optional: Add a border or shadow to separate navbar from the rest */
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.7);
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Ensure logo and text are styled appropriately */
 .navbar-brand {
     display: flex;
     align-items: center;
 }
 
 .navbar-brand img {
-    height: 90px; /* Increase logo height */
-    margin-right: 15px; /* Increase spacing between logo and text */
+    height: 90px;
+    margin-right: 15px;
 }
 
 .navbar-text {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 1.5rem; /* Increase font size for "Car Showroom" text */
+    font-size: 1.5rem;
     font-weight: bold;
     white-space: nowrap;
 }
@@ -48,24 +46,22 @@ body {
 }
 
 .navbar-nav .nav-item {
-    margin: 0 1rem; /* Increase spacing between nav items */
+    margin: 0 1rem;
 }
 
 .navbar-nav .nav-link {
-    padding: 0.5rem 1rem; /* Adjust padding for larger links */
-    font-size: 1.25rem; /* Increase font size for nav links */
-    color: #fff; /* Set link color to white */
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    color: #fff;
 }
 
-/* Ensure header and jumbotron are full-width */
 header.jumbotron {
     margin-bottom: 0;
-    background: rgba(0, 0, 0, 0.7); /* Optional: Add semi-transparent background */
-    color: #fff; /* Ensure text is readable */
-    padding: 2rem; /* Adjust padding as needed */
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 2rem;
 }
 
-/* Card styling */
 .gallery .card {
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -82,16 +78,17 @@ header.jumbotron {
 }
 
 .btn-buy {
-            
-    padding: 0.75rem 1.5rem; /* Adjust padding */
-    background-color: #007bff; /* Button background color */
-    color: white; /* Button text color */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth transition */
+
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
     margin-bottom: 3rem;
-    
+
 }
+
 .btn-buy:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3;
 }
